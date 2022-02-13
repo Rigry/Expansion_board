@@ -703,7 +703,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtn.o
 .iplt           0x0000000008003204        0x0
  .iplt          0x0000000008003204        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x0000000008003204      0x2f4
+.rodata         0x0000000008003204      0x2a0
                 0x0000000008003204                . = ALIGN (0x4)
  *(.rodata)
  .rodata        0x0000000008003204        0x8 build/main.o
@@ -727,63 +727,64 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtn.o
                 0x0000000008003248        0xc build/main.o
                 0x0000000008003248                vtable for Safe_flash_updater_impl<Minutes, Flash_updater_impl<Minutes, (mcu::FLASH::Sector)89, (mcu::FLASH::Sector)90, (mcu::FLASH::Sector)91, (mcu::FLASH::Sector)92, (mcu::FLASH::Sector)93, (mcu::FLASH::Sector)94, (mcu::FLASH::Sector)95, (mcu::FLASH::Sector)96, (mcu::FLASH::Sector)97>, Flash_updater_impl<Minutes, (mcu::FLASH::Sector)98, (mcu::FLASH::Sector)99, (mcu::FLASH::Sector)100, (mcu::FLASH::Sector)101, (mcu::FLASH::Sector)102, (mcu::FLASH::Sector)103, (mcu::FLASH::Sector)104, (mcu::FLASH::Sector)105, (mcu::FLASH::Sector)106>, Flash_updater_impl<Minutes, (mcu::FLASH::Sector)107, (mcu::FLASH::Sector)108, (mcu::FLASH::Sector)109, (mcu::FLASH::Sector)110, (mcu::FLASH::Sector)111, (mcu::FLASH::Sector)112, (mcu::FLASH::Sector)113, (mcu::FLASH::Sector)114, (mcu::FLASH::Sector)115> >
  .rodata._ZN18Flash_updater_implI7MinutesJLN3mcu5FLASH6SectorE107ELS3_108ELS3_109ELS3_110ELS3_111ELS3_112ELS3_113ELS3_114ELS3_115EEE7sectorsE
-                0x0000000008003254       0x24 build/main.o
+                0x0000000008003254        0x9 build/main.o
                 0x0000000008003254                Flash_updater_impl<Minutes, (mcu::FLASH::Sector)107, (mcu::FLASH::Sector)108, (mcu::FLASH::Sector)109, (mcu::FLASH::Sector)110, (mcu::FLASH::Sector)111, (mcu::FLASH::Sector)112, (mcu::FLASH::Sector)113, (mcu::FLASH::Sector)114, (mcu::FLASH::Sector)115>::sectors
  .rodata._ZN18Flash_updater_implI7MinutesJLN3mcu5FLASH6SectorE98ELS3_99ELS3_100ELS3_101ELS3_102ELS3_103ELS3_104ELS3_105ELS3_106EEE7sectorsE
-                0x0000000008003278       0x24 build/main.o
-                0x0000000008003278                Flash_updater_impl<Minutes, (mcu::FLASH::Sector)98, (mcu::FLASH::Sector)99, (mcu::FLASH::Sector)100, (mcu::FLASH::Sector)101, (mcu::FLASH::Sector)102, (mcu::FLASH::Sector)103, (mcu::FLASH::Sector)104, (mcu::FLASH::Sector)105, (mcu::FLASH::Sector)106>::sectors
+                0x000000000800325d        0x9 build/main.o
+                0x000000000800325d                Flash_updater_impl<Minutes, (mcu::FLASH::Sector)98, (mcu::FLASH::Sector)99, (mcu::FLASH::Sector)100, (mcu::FLASH::Sector)101, (mcu::FLASH::Sector)102, (mcu::FLASH::Sector)103, (mcu::FLASH::Sector)104, (mcu::FLASH::Sector)105, (mcu::FLASH::Sector)106>::sectors
  .rodata._ZN18Flash_updater_implI7MinutesJLN3mcu5FLASH6SectorE89ELS3_90ELS3_91ELS3_92ELS3_93ELS3_94ELS3_95ELS3_96ELS3_97EEE7sectorsE
-                0x000000000800329c       0x24 build/main.o
-                0x000000000800329c                Flash_updater_impl<Minutes, (mcu::FLASH::Sector)89, (mcu::FLASH::Sector)90, (mcu::FLASH::Sector)91, (mcu::FLASH::Sector)92, (mcu::FLASH::Sector)93, (mcu::FLASH::Sector)94, (mcu::FLASH::Sector)95, (mcu::FLASH::Sector)96, (mcu::FLASH::Sector)97>::sectors
+                0x0000000008003266        0x9 build/main.o
+                0x0000000008003266                Flash_updater_impl<Minutes, (mcu::FLASH::Sector)89, (mcu::FLASH::Sector)90, (mcu::FLASH::Sector)91, (mcu::FLASH::Sector)92, (mcu::FLASH::Sector)93, (mcu::FLASH::Sector)94, (mcu::FLASH::Sector)95, (mcu::FLASH::Sector)96, (mcu::FLASH::Sector)97>::sectors
  .rodata._ZL13crc_low_table
-                0x00000000080032c0      0x100 build/main.o
+                0x000000000800326f      0x100 build/main.o
  .rodata._ZL14crc_high_table
-                0x00000000080033c0      0x100 build/main.o
+                0x000000000800336f      0x100 build/main.o
  .rodata._ZN18Flash_updater_implIZ4mainE10Flash_dataJLN3mcu5FLASH6SectorE127ELS3_126EEE7sectorsE
-                0x00000000080034c0        0x8 build/main.o
+                0x000000000800346f        0x2 build/main.o
+ *fill*         0x0000000008003471        0x3 
  .rodata._ZTV12Modbus_slaveIZ4mainE7In_regsZ4mainE8Out_regsLj0EE
-                0x00000000080034c8        0xc build/main.o
+                0x0000000008003474        0xc build/main.o
  .rodata._ZTV18Flash_updater_implIZ4mainE10Flash_dataJLN3mcu5FLASH6SectorE127ELS3_126EEE
-                0x00000000080034d4        0xc build/main.o
+                0x0000000008003480        0xc build/main.o
  .rodata._ZTVN12Modbus_slaveIZ4mainE7In_regsZ4mainE8Out_regsLj0EE13dma_interruptE
-                0x00000000080034e0        0xc build/main.o
+                0x000000000800348c        0xc build/main.o
  .rodata._ZTVN12Modbus_slaveIZ4mainE7In_regsZ4mainE8Out_regsLj0EE14uart_interruptE
-                0x00000000080034ec        0xc build/main.o
-                0x00000000080034f8                . = ALIGN (0x4)
+                0x0000000008003498        0xc build/main.o
+                0x00000000080034a4                . = ALIGN (0x4)
 
-.rel.dyn        0x00000000080034f8        0x0
- .rel.iplt      0x00000000080034f8        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x00000000080034a4        0x0
+ .rel.iplt      0x00000000080034a4        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x00000000080034f8        0x0
-                0x00000000080034f8                __exidx_start = .
+.ARM            0x00000000080034a4        0x0
+                0x00000000080034a4                __exidx_start = .
  *(.ARM.exidx*)
-                0x00000000080034f8                __exidx_end = .
+                0x00000000080034a4                __exidx_end = .
 
-.preinit_array  0x00000000080034f8        0x0
-                0x00000000080034f8                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x00000000080034a4        0x0
+                0x00000000080034a4                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x00000000080034f8                PROVIDE (__preinit_array_end = .)
+                0x00000000080034a4                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x00000000080034f8        0x8
-                0x00000000080034f8                PROVIDE (__init_array_start = .)
+.init_array     0x00000000080034a4        0x8
+                0x00000000080034a4                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x00000000080034f8        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
- .init_array    0x00000000080034fc        0x4 build/main.o
-                0x0000000008003500                PROVIDE (__init_array_end = .)
+ .init_array    0x00000000080034a4        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+ .init_array    0x00000000080034a8        0x4 build/main.o
+                0x00000000080034ac                PROVIDE (__init_array_end = .)
 
-.fini_array     0x0000000008003500        0x4
-                0x0000000008003500                PROVIDE (__fini_array_start = .)
+.fini_array     0x00000000080034ac        0x4
+                0x00000000080034ac                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0000000008003500        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x0000000008003504                PROVIDE (__fini_array_end = .)
-                0x0000000008003504                _sidata = LOADADDR (.data)
+ .fini_array    0x00000000080034ac        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x00000000080034b0                PROVIDE (__fini_array_end = .)
+                0x00000000080034b0                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000        0x0 load address 0x0000000008003504
+.data           0x0000000020000000        0x0 load address 0x00000000080034b0
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -792,17 +793,17 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtn.o
                 0x0000000020000000                _edata = .
 
 .tm_clone_table
-                0x0000000020000000        0x0 load address 0x0000000008003504
+                0x0000000020000000        0x0 load address 0x00000000080034b0
  .tm_clone_table
                 0x0000000020000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x0000000020000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x0000000020000000        0x0 load address 0x0000000008003504
+.igot.plt       0x0000000020000000        0x0 load address 0x00000000080034b0
  .igot.plt      0x0000000020000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
                 0x0000000020000000                . = ALIGN (0x4)
 
-.bss            0x0000000020000000      0x438 load address 0x0000000008003504
+.bss            0x0000000020000000      0x438 load address 0x00000000080034b0
                 0x0000000020000000                _sbss = .
                 0x0000000020000000                __bss_start__ = _sbss
  *(.bss)
@@ -1055,7 +1056,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtn.o
                 0x0000000020000438                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x0000000020000438      0x600 load address 0x0000000008003504
+                0x0000000020000438      0x600 load address 0x00000000080034b0
                 0x0000000020000438                . = ALIGN (0x8)
                 [!provide]                        PROVIDE (end = .)
                 [!provide]                        PROVIDE (_end = .)
@@ -1138,12 +1139,12 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a
  .debug_abbrev  0x0000000000001f4b       0x14 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
  .debug_abbrev  0x0000000000001f5f       0x14 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
 
-.debug_loc      0x0000000000000000     0xeffd
- .debug_loc     0x0000000000000000     0xe5d8 build/main.o
- .debug_loc     0x000000000000e5d8       0x98 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
- .debug_loc     0x000000000000e670      0x22d /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcmp.o)
- .debug_loc     0x000000000000e89d      0x481 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
- .debug_loc     0x000000000000ed1e      0x2df /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+.debug_loc      0x0000000000000000     0xefeb
+ .debug_loc     0x0000000000000000     0xe5c6 build/main.o
+ .debug_loc     0x000000000000e5c6       0x98 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+ .debug_loc     0x000000000000e65e      0x22d /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcmp.o)
+ .debug_loc     0x000000000000e88b      0x481 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_loc     0x000000000000ed0c      0x2df /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
 
 .debug_aranges  0x0000000000000000      0x488
  .debug_aranges

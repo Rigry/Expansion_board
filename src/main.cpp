@@ -176,7 +176,7 @@ int main()
             } // switch
         });
 
-        work_flags.bad_lamps = work_flags.uv_on and modbus_slave.outRegs.bad_lamps;
+        // work_flags.bad_lamps = work_flags.uv_on and modbus_slave.outRegs.bad_lamps;
 
         __WFI();
     }
