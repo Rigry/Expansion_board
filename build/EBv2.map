@@ -351,7 +351,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtn.o
                 0x0000000008000000                g_pfnVectors
                 0x000000000800010c                . = ALIGN (0x4)
 
-.text           0x000000000800010c     0x30f8
+.text           0x000000000800010c     0x30c8
                 0x000000000800010c                . = ALIGN (0x4)
  *(.text)
  .text          0x000000000800010c       0x98 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
@@ -631,160 +631,160 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtn.o
                 0x000000000800199c                Safe_flash_updater_impl<Minutes, Flash_updater_impl<Minutes, (mcu::FLASH::Sector)89, (mcu::FLASH::Sector)90, (mcu::FLASH::Sector)91, (mcu::FLASH::Sector)92, (mcu::FLASH::Sector)93, (mcu::FLASH::Sector)94, (mcu::FLASH::Sector)95, (mcu::FLASH::Sector)96, (mcu::FLASH::Sector)97>, Flash_updater_impl<Minutes, (mcu::FLASH::Sector)98, (mcu::FLASH::Sector)99, (mcu::FLASH::Sector)100, (mcu::FLASH::Sector)101, (mcu::FLASH::Sector)102, (mcu::FLASH::Sector)103, (mcu::FLASH::Sector)104, (mcu::FLASH::Sector)105, (mcu::FLASH::Sector)106>, Flash_updater_impl<Minutes, (mcu::FLASH::Sector)107, (mcu::FLASH::Sector)108, (mcu::FLASH::Sector)109, (mcu::FLASH::Sector)110, (mcu::FLASH::Sector)111, (mcu::FLASH::Sector)112, (mcu::FLASH::Sector)113, (mcu::FLASH::Sector)114, (mcu::FLASH::Sector)115> >::Safe_flash_updater_impl(Minutes*)
                 0x000000000800199c                Safe_flash_updater_impl<Minutes, Flash_updater_impl<Minutes, (mcu::FLASH::Sector)89, (mcu::FLASH::Sector)90, (mcu::FLASH::Sector)91, (mcu::FLASH::Sector)92, (mcu::FLASH::Sector)93, (mcu::FLASH::Sector)94, (mcu::FLASH::Sector)95, (mcu::FLASH::Sector)96, (mcu::FLASH::Sector)97>, Flash_updater_impl<Minutes, (mcu::FLASH::Sector)98, (mcu::FLASH::Sector)99, (mcu::FLASH::Sector)100, (mcu::FLASH::Sector)101, (mcu::FLASH::Sector)102, (mcu::FLASH::Sector)103, (mcu::FLASH::Sector)104, (mcu::FLASH::Sector)105, (mcu::FLASH::Sector)106>, Flash_updater_impl<Minutes, (mcu::FLASH::Sector)107, (mcu::FLASH::Sector)108, (mcu::FLASH::Sector)109, (mcu::FLASH::Sector)110, (mcu::FLASH::Sector)111, (mcu::FLASH::Sector)112, (mcu::FLASH::Sector)113, (mcu::FLASH::Sector)114, (mcu::FLASH::Sector)115> >::Safe_flash_updater_impl(Minutes*)
  .text.startup.main
-                0x0000000008001cf8      0xa00 build/main.o
+                0x0000000008001cf8      0x9d0 build/main.o
                 0x0000000008001cf8                main
  .text._ZSt4findIPbbET_S1_S1_RKT0_
-                0x00000000080026f8       0x66 build/main.o
-                0x00000000080026f8                bool* std::find<bool*, bool>(bool*, bool*, bool const&)
- *fill*         0x000000000800275e        0x2 
+                0x00000000080026c8       0x66 build/main.o
+                0x00000000080026c8                bool* std::find<bool*, bool>(bool*, bool*, bool const&)
+ *fill*         0x000000000800272e        0x2 
  .text._ZN18Flash_updater_implIZ4mainE10Flash_dataJLN3mcu5FLASH6SectorE127ELS3_126EEE6notifyEv
-                0x0000000008002760      0x1e4 build/main.o
+                0x0000000008002730      0x1e4 build/main.o
  .text._ZN18Flash_updater_implI7MinutesJLN3mcu5FLASH6SectorE107ELS3_108ELS3_109ELS3_110ELS3_111ELS3_112ELS3_113ELS3_114ELS3_115EEE13is_need_eraseEv
-                0x0000000008002944       0x6a build/main.o
-                0x0000000008002944                Flash_updater_impl<Minutes, (mcu::FLASH::Sector)107, (mcu::FLASH::Sector)108, (mcu::FLASH::Sector)109, (mcu::FLASH::Sector)110, (mcu::FLASH::Sector)111, (mcu::FLASH::Sector)112, (mcu::FLASH::Sector)113, (mcu::FLASH::Sector)114, (mcu::FLASH::Sector)115>::is_need_erase()
- *fill*         0x00000000080029ae        0x2 
+                0x0000000008002914       0x6a build/main.o
+                0x0000000008002914                Flash_updater_impl<Minutes, (mcu::FLASH::Sector)107, (mcu::FLASH::Sector)108, (mcu::FLASH::Sector)109, (mcu::FLASH::Sector)110, (mcu::FLASH::Sector)111, (mcu::FLASH::Sector)112, (mcu::FLASH::Sector)113, (mcu::FLASH::Sector)114, (mcu::FLASH::Sector)115>::is_need_erase()
+ *fill*         0x000000000800297e        0x2 
  .text._ZN18Flash_updater_implI7MinutesJLN3mcu5FLASH6SectorE107ELS3_108ELS3_109ELS3_110ELS3_111ELS3_112ELS3_113ELS3_114ELS3_115EEE6notifyEv
-                0x00000000080029b0      0x1e0 build/main.o
-                0x00000000080029b0                Flash_updater_impl<Minutes, (mcu::FLASH::Sector)107, (mcu::FLASH::Sector)108, (mcu::FLASH::Sector)109, (mcu::FLASH::Sector)110, (mcu::FLASH::Sector)111, (mcu::FLASH::Sector)112, (mcu::FLASH::Sector)113, (mcu::FLASH::Sector)114, (mcu::FLASH::Sector)115>::notify()
+                0x0000000008002980      0x1e0 build/main.o
+                0x0000000008002980                Flash_updater_impl<Minutes, (mcu::FLASH::Sector)107, (mcu::FLASH::Sector)108, (mcu::FLASH::Sector)109, (mcu::FLASH::Sector)110, (mcu::FLASH::Sector)111, (mcu::FLASH::Sector)112, (mcu::FLASH::Sector)113, (mcu::FLASH::Sector)114, (mcu::FLASH::Sector)115>::notify()
  .text._ZN18Flash_updater_implI7MinutesJLN3mcu5FLASH6SectorE98ELS3_99ELS3_100ELS3_101ELS3_102ELS3_103ELS3_104ELS3_105ELS3_106EEE13is_need_eraseEv
-                0x0000000008002b90       0x6a build/main.o
-                0x0000000008002b90                Flash_updater_impl<Minutes, (mcu::FLASH::Sector)98, (mcu::FLASH::Sector)99, (mcu::FLASH::Sector)100, (mcu::FLASH::Sector)101, (mcu::FLASH::Sector)102, (mcu::FLASH::Sector)103, (mcu::FLASH::Sector)104, (mcu::FLASH::Sector)105, (mcu::FLASH::Sector)106>::is_need_erase()
- *fill*         0x0000000008002bfa        0x2 
+                0x0000000008002b60       0x6a build/main.o
+                0x0000000008002b60                Flash_updater_impl<Minutes, (mcu::FLASH::Sector)98, (mcu::FLASH::Sector)99, (mcu::FLASH::Sector)100, (mcu::FLASH::Sector)101, (mcu::FLASH::Sector)102, (mcu::FLASH::Sector)103, (mcu::FLASH::Sector)104, (mcu::FLASH::Sector)105, (mcu::FLASH::Sector)106>::is_need_erase()
+ *fill*         0x0000000008002bca        0x2 
  .text._ZN18Flash_updater_implI7MinutesJLN3mcu5FLASH6SectorE98ELS3_99ELS3_100ELS3_101ELS3_102ELS3_103ELS3_104ELS3_105ELS3_106EEE6notifyEv
-                0x0000000008002bfc      0x1e0 build/main.o
-                0x0000000008002bfc                Flash_updater_impl<Minutes, (mcu::FLASH::Sector)98, (mcu::FLASH::Sector)99, (mcu::FLASH::Sector)100, (mcu::FLASH::Sector)101, (mcu::FLASH::Sector)102, (mcu::FLASH::Sector)103, (mcu::FLASH::Sector)104, (mcu::FLASH::Sector)105, (mcu::FLASH::Sector)106>::notify()
+                0x0000000008002bcc      0x1e0 build/main.o
+                0x0000000008002bcc                Flash_updater_impl<Minutes, (mcu::FLASH::Sector)98, (mcu::FLASH::Sector)99, (mcu::FLASH::Sector)100, (mcu::FLASH::Sector)101, (mcu::FLASH::Sector)102, (mcu::FLASH::Sector)103, (mcu::FLASH::Sector)104, (mcu::FLASH::Sector)105, (mcu::FLASH::Sector)106>::notify()
  .text._ZN18Flash_updater_implI7MinutesJLN3mcu5FLASH6SectorE89ELS3_90ELS3_91ELS3_92ELS3_93ELS3_94ELS3_95ELS3_96ELS3_97EEE13is_need_eraseEv
-                0x0000000008002ddc       0x6a build/main.o
-                0x0000000008002ddc                Flash_updater_impl<Minutes, (mcu::FLASH::Sector)89, (mcu::FLASH::Sector)90, (mcu::FLASH::Sector)91, (mcu::FLASH::Sector)92, (mcu::FLASH::Sector)93, (mcu::FLASH::Sector)94, (mcu::FLASH::Sector)95, (mcu::FLASH::Sector)96, (mcu::FLASH::Sector)97>::is_need_erase()
- *fill*         0x0000000008002e46        0x2 
+                0x0000000008002dac       0x6a build/main.o
+                0x0000000008002dac                Flash_updater_impl<Minutes, (mcu::FLASH::Sector)89, (mcu::FLASH::Sector)90, (mcu::FLASH::Sector)91, (mcu::FLASH::Sector)92, (mcu::FLASH::Sector)93, (mcu::FLASH::Sector)94, (mcu::FLASH::Sector)95, (mcu::FLASH::Sector)96, (mcu::FLASH::Sector)97>::is_need_erase()
+ *fill*         0x0000000008002e16        0x2 
  .text._ZN18Flash_updater_implI7MinutesJLN3mcu5FLASH6SectorE89ELS3_90ELS3_91ELS3_92ELS3_93ELS3_94ELS3_95ELS3_96ELS3_97EEE6notifyEv
-                0x0000000008002e48      0x1e0 build/main.o
-                0x0000000008002e48                Flash_updater_impl<Minutes, (mcu::FLASH::Sector)89, (mcu::FLASH::Sector)90, (mcu::FLASH::Sector)91, (mcu::FLASH::Sector)92, (mcu::FLASH::Sector)93, (mcu::FLASH::Sector)94, (mcu::FLASH::Sector)95, (mcu::FLASH::Sector)96, (mcu::FLASH::Sector)97>::notify()
+                0x0000000008002e18      0x1e0 build/main.o
+                0x0000000008002e18                Flash_updater_impl<Minutes, (mcu::FLASH::Sector)89, (mcu::FLASH::Sector)90, (mcu::FLASH::Sector)91, (mcu::FLASH::Sector)92, (mcu::FLASH::Sector)93, (mcu::FLASH::Sector)94, (mcu::FLASH::Sector)95, (mcu::FLASH::Sector)96, (mcu::FLASH::Sector)97>::notify()
  .text.startup._GLOBAL__sub_I__ZN3mcu5FLASH6unlockEv
-                0x0000000008003028      0x178 build/main.o
+                0x0000000008002ff8      0x178 build/main.o
  .text.Reset_Handler
-                0x00000000080031a0       0x48 build/startup_stm32f103xb.o
-                0x00000000080031a0                Reset_Handler
+                0x0000000008003170       0x48 build/startup_stm32f103xb.o
+                0x0000000008003170                Reset_Handler
  .text.Default_Handler
-                0x00000000080031e8        0x2 build/startup_stm32f103xb.o
-                0x00000000080031e8                DebugMon_Handler
-                0x00000000080031e8                HardFault_Handler
-                0x00000000080031e8                PendSV_Handler
-                0x00000000080031e8                NMI_Handler
-                0x00000000080031e8                UsageFault_Handler
-                0x00000000080031e8                Default_Handler
-                0x00000000080031e8                MemManage_Handler
-                0x00000000080031e8                SVC_Handler
-                0x00000000080031e8                BusFault_Handler
+                0x00000000080031b8        0x2 build/startup_stm32f103xb.o
+                0x00000000080031b8                DebugMon_Handler
+                0x00000000080031b8                HardFault_Handler
+                0x00000000080031b8                PendSV_Handler
+                0x00000000080031b8                NMI_Handler
+                0x00000000080031b8                UsageFault_Handler
+                0x00000000080031b8                Default_Handler
+                0x00000000080031b8                MemManage_Handler
+                0x00000000080031b8                SVC_Handler
+                0x00000000080031b8                BusFault_Handler
  *(.glue_7)
- .glue_7        0x00000000080031ea        0x0 linker stubs
+ .glue_7        0x00000000080031ba        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x00000000080031ea        0x0 linker stubs
+ .glue_7t       0x00000000080031ba        0x0 linker stubs
  *(.eh_frame)
- *fill*         0x00000000080031ea        0x2 
- .eh_frame      0x00000000080031ec        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+ *fill*         0x00000000080031ba        0x2 
+ .eh_frame      0x00000000080031bc        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
  *(.init)
- .init          0x00000000080031ec        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crti.o
-                0x00000000080031ec                _init
- .init          0x00000000080031f0        0x8 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtn.o
+ .init          0x00000000080031bc        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crti.o
+                0x00000000080031bc                _init
+ .init          0x00000000080031c0        0x8 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtn.o
  *(.fini)
- .fini          0x00000000080031f8        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crti.o
-                0x00000000080031f8                _fini
- .fini          0x00000000080031fc        0x8 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtn.o
-                0x0000000008003204                . = ALIGN (0x4)
-                0x0000000008003204                _etext = .
+ .fini          0x00000000080031c8        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crti.o
+                0x00000000080031c8                _fini
+ .fini          0x00000000080031cc        0x8 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtn.o
+                0x00000000080031d4                . = ALIGN (0x4)
+                0x00000000080031d4                _etext = .
 
-.vfp11_veneer   0x0000000008003204        0x0
- .vfp11_veneer  0x0000000008003204        0x0 linker stubs
+.vfp11_veneer   0x00000000080031d4        0x0
+ .vfp11_veneer  0x00000000080031d4        0x0 linker stubs
 
-.v4_bx          0x0000000008003204        0x0
- .v4_bx         0x0000000008003204        0x0 linker stubs
+.v4_bx          0x00000000080031d4        0x0
+ .v4_bx         0x00000000080031d4        0x0 linker stubs
 
-.iplt           0x0000000008003204        0x0
- .iplt          0x0000000008003204        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x00000000080031d4        0x0
+ .iplt          0x00000000080031d4        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x0000000008003204      0x2a0
-                0x0000000008003204                . = ALIGN (0x4)
+.rodata         0x00000000080031d4      0x2a0
+                0x00000000080031d4                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x0000000008003204        0x8 build/main.o
+ .rodata        0x00000000080031d4        0x8 build/main.o
  *(.rodata*)
  .rodata._ZTV5Lamps
-                0x000000000800320c        0xc build/main.o
-                0x000000000800320c                vtable for Lamps
+                0x00000000080031dc        0xc build/main.o
+                0x00000000080031dc                vtable for Lamps
  .rodata._ZTV10Work_count
-                0x0000000008003218        0xc build/main.o
-                0x0000000008003218                vtable for Work_count
+                0x00000000080031e8        0xc build/main.o
+                0x00000000080031e8                vtable for Work_count
  .rodata._ZTV18Flash_updater_implI7MinutesJLN3mcu5FLASH6SectorE89ELS3_90ELS3_91ELS3_92ELS3_93ELS3_94ELS3_95ELS3_96ELS3_97EEE
-                0x0000000008003224        0xc build/main.o
-                0x0000000008003224                vtable for Flash_updater_impl<Minutes, (mcu::FLASH::Sector)89, (mcu::FLASH::Sector)90, (mcu::FLASH::Sector)91, (mcu::FLASH::Sector)92, (mcu::FLASH::Sector)93, (mcu::FLASH::Sector)94, (mcu::FLASH::Sector)95, (mcu::FLASH::Sector)96, (mcu::FLASH::Sector)97>
+                0x00000000080031f4        0xc build/main.o
+                0x00000000080031f4                vtable for Flash_updater_impl<Minutes, (mcu::FLASH::Sector)89, (mcu::FLASH::Sector)90, (mcu::FLASH::Sector)91, (mcu::FLASH::Sector)92, (mcu::FLASH::Sector)93, (mcu::FLASH::Sector)94, (mcu::FLASH::Sector)95, (mcu::FLASH::Sector)96, (mcu::FLASH::Sector)97>
  .rodata._ZTV18Flash_updater_implI7MinutesJLN3mcu5FLASH6SectorE98ELS3_99ELS3_100ELS3_101ELS3_102ELS3_103ELS3_104ELS3_105ELS3_106EEE
-                0x0000000008003230        0xc build/main.o
-                0x0000000008003230                vtable for Flash_updater_impl<Minutes, (mcu::FLASH::Sector)98, (mcu::FLASH::Sector)99, (mcu::FLASH::Sector)100, (mcu::FLASH::Sector)101, (mcu::FLASH::Sector)102, (mcu::FLASH::Sector)103, (mcu::FLASH::Sector)104, (mcu::FLASH::Sector)105, (mcu::FLASH::Sector)106>
+                0x0000000008003200        0xc build/main.o
+                0x0000000008003200                vtable for Flash_updater_impl<Minutes, (mcu::FLASH::Sector)98, (mcu::FLASH::Sector)99, (mcu::FLASH::Sector)100, (mcu::FLASH::Sector)101, (mcu::FLASH::Sector)102, (mcu::FLASH::Sector)103, (mcu::FLASH::Sector)104, (mcu::FLASH::Sector)105, (mcu::FLASH::Sector)106>
  .rodata._ZTV18Flash_updater_implI7MinutesJLN3mcu5FLASH6SectorE107ELS3_108ELS3_109ELS3_110ELS3_111ELS3_112ELS3_113ELS3_114ELS3_115EEE
-                0x000000000800323c        0xc build/main.o
-                0x000000000800323c                vtable for Flash_updater_impl<Minutes, (mcu::FLASH::Sector)107, (mcu::FLASH::Sector)108, (mcu::FLASH::Sector)109, (mcu::FLASH::Sector)110, (mcu::FLASH::Sector)111, (mcu::FLASH::Sector)112, (mcu::FLASH::Sector)113, (mcu::FLASH::Sector)114, (mcu::FLASH::Sector)115>
+                0x000000000800320c        0xc build/main.o
+                0x000000000800320c                vtable for Flash_updater_impl<Minutes, (mcu::FLASH::Sector)107, (mcu::FLASH::Sector)108, (mcu::FLASH::Sector)109, (mcu::FLASH::Sector)110, (mcu::FLASH::Sector)111, (mcu::FLASH::Sector)112, (mcu::FLASH::Sector)113, (mcu::FLASH::Sector)114, (mcu::FLASH::Sector)115>
  .rodata._ZTV23Safe_flash_updater_implI7Minutes18Flash_updater_implIS0_JLN3mcu5FLASH6SectorE89ELS4_90ELS4_91ELS4_92ELS4_93ELS4_94ELS4_95ELS4_96ELS4_97EEES1_IS0_JLS4_98ELS4_99ELS4_100ELS4_101ELS4_102ELS4_103ELS4_104ELS4_105ELS4_106EEES1_IS0_JLS4_107ELS4_108ELS4_109ELS4_110ELS4_111ELS4_112ELS4_113ELS4_114ELS4_115EEEE
-                0x0000000008003248        0xc build/main.o
-                0x0000000008003248                vtable for Safe_flash_updater_impl<Minutes, Flash_updater_impl<Minutes, (mcu::FLASH::Sector)89, (mcu::FLASH::Sector)90, (mcu::FLASH::Sector)91, (mcu::FLASH::Sector)92, (mcu::FLASH::Sector)93, (mcu::FLASH::Sector)94, (mcu::FLASH::Sector)95, (mcu::FLASH::Sector)96, (mcu::FLASH::Sector)97>, Flash_updater_impl<Minutes, (mcu::FLASH::Sector)98, (mcu::FLASH::Sector)99, (mcu::FLASH::Sector)100, (mcu::FLASH::Sector)101, (mcu::FLASH::Sector)102, (mcu::FLASH::Sector)103, (mcu::FLASH::Sector)104, (mcu::FLASH::Sector)105, (mcu::FLASH::Sector)106>, Flash_updater_impl<Minutes, (mcu::FLASH::Sector)107, (mcu::FLASH::Sector)108, (mcu::FLASH::Sector)109, (mcu::FLASH::Sector)110, (mcu::FLASH::Sector)111, (mcu::FLASH::Sector)112, (mcu::FLASH::Sector)113, (mcu::FLASH::Sector)114, (mcu::FLASH::Sector)115> >
+                0x0000000008003218        0xc build/main.o
+                0x0000000008003218                vtable for Safe_flash_updater_impl<Minutes, Flash_updater_impl<Minutes, (mcu::FLASH::Sector)89, (mcu::FLASH::Sector)90, (mcu::FLASH::Sector)91, (mcu::FLASH::Sector)92, (mcu::FLASH::Sector)93, (mcu::FLASH::Sector)94, (mcu::FLASH::Sector)95, (mcu::FLASH::Sector)96, (mcu::FLASH::Sector)97>, Flash_updater_impl<Minutes, (mcu::FLASH::Sector)98, (mcu::FLASH::Sector)99, (mcu::FLASH::Sector)100, (mcu::FLASH::Sector)101, (mcu::FLASH::Sector)102, (mcu::FLASH::Sector)103, (mcu::FLASH::Sector)104, (mcu::FLASH::Sector)105, (mcu::FLASH::Sector)106>, Flash_updater_impl<Minutes, (mcu::FLASH::Sector)107, (mcu::FLASH::Sector)108, (mcu::FLASH::Sector)109, (mcu::FLASH::Sector)110, (mcu::FLASH::Sector)111, (mcu::FLASH::Sector)112, (mcu::FLASH::Sector)113, (mcu::FLASH::Sector)114, (mcu::FLASH::Sector)115> >
  .rodata._ZN18Flash_updater_implI7MinutesJLN3mcu5FLASH6SectorE107ELS3_108ELS3_109ELS3_110ELS3_111ELS3_112ELS3_113ELS3_114ELS3_115EEE7sectorsE
-                0x0000000008003254        0x9 build/main.o
-                0x0000000008003254                Flash_updater_impl<Minutes, (mcu::FLASH::Sector)107, (mcu::FLASH::Sector)108, (mcu::FLASH::Sector)109, (mcu::FLASH::Sector)110, (mcu::FLASH::Sector)111, (mcu::FLASH::Sector)112, (mcu::FLASH::Sector)113, (mcu::FLASH::Sector)114, (mcu::FLASH::Sector)115>::sectors
+                0x0000000008003224        0x9 build/main.o
+                0x0000000008003224                Flash_updater_impl<Minutes, (mcu::FLASH::Sector)107, (mcu::FLASH::Sector)108, (mcu::FLASH::Sector)109, (mcu::FLASH::Sector)110, (mcu::FLASH::Sector)111, (mcu::FLASH::Sector)112, (mcu::FLASH::Sector)113, (mcu::FLASH::Sector)114, (mcu::FLASH::Sector)115>::sectors
  .rodata._ZN18Flash_updater_implI7MinutesJLN3mcu5FLASH6SectorE98ELS3_99ELS3_100ELS3_101ELS3_102ELS3_103ELS3_104ELS3_105ELS3_106EEE7sectorsE
-                0x000000000800325d        0x9 build/main.o
-                0x000000000800325d                Flash_updater_impl<Minutes, (mcu::FLASH::Sector)98, (mcu::FLASH::Sector)99, (mcu::FLASH::Sector)100, (mcu::FLASH::Sector)101, (mcu::FLASH::Sector)102, (mcu::FLASH::Sector)103, (mcu::FLASH::Sector)104, (mcu::FLASH::Sector)105, (mcu::FLASH::Sector)106>::sectors
+                0x000000000800322d        0x9 build/main.o
+                0x000000000800322d                Flash_updater_impl<Minutes, (mcu::FLASH::Sector)98, (mcu::FLASH::Sector)99, (mcu::FLASH::Sector)100, (mcu::FLASH::Sector)101, (mcu::FLASH::Sector)102, (mcu::FLASH::Sector)103, (mcu::FLASH::Sector)104, (mcu::FLASH::Sector)105, (mcu::FLASH::Sector)106>::sectors
  .rodata._ZN18Flash_updater_implI7MinutesJLN3mcu5FLASH6SectorE89ELS3_90ELS3_91ELS3_92ELS3_93ELS3_94ELS3_95ELS3_96ELS3_97EEE7sectorsE
-                0x0000000008003266        0x9 build/main.o
-                0x0000000008003266                Flash_updater_impl<Minutes, (mcu::FLASH::Sector)89, (mcu::FLASH::Sector)90, (mcu::FLASH::Sector)91, (mcu::FLASH::Sector)92, (mcu::FLASH::Sector)93, (mcu::FLASH::Sector)94, (mcu::FLASH::Sector)95, (mcu::FLASH::Sector)96, (mcu::FLASH::Sector)97>::sectors
+                0x0000000008003236        0x9 build/main.o
+                0x0000000008003236                Flash_updater_impl<Minutes, (mcu::FLASH::Sector)89, (mcu::FLASH::Sector)90, (mcu::FLASH::Sector)91, (mcu::FLASH::Sector)92, (mcu::FLASH::Sector)93, (mcu::FLASH::Sector)94, (mcu::FLASH::Sector)95, (mcu::FLASH::Sector)96, (mcu::FLASH::Sector)97>::sectors
  .rodata._ZL13crc_low_table
-                0x000000000800326f      0x100 build/main.o
+                0x000000000800323f      0x100 build/main.o
  .rodata._ZL14crc_high_table
-                0x000000000800336f      0x100 build/main.o
+                0x000000000800333f      0x100 build/main.o
  .rodata._ZN18Flash_updater_implIZ4mainE10Flash_dataJLN3mcu5FLASH6SectorE127ELS3_126EEE7sectorsE
-                0x000000000800346f        0x2 build/main.o
- *fill*         0x0000000008003471        0x3 
+                0x000000000800343f        0x2 build/main.o
+ *fill*         0x0000000008003441        0x3 
  .rodata._ZTV12Modbus_slaveIZ4mainE7In_regsZ4mainE8Out_regsLj0EE
-                0x0000000008003474        0xc build/main.o
+                0x0000000008003444        0xc build/main.o
  .rodata._ZTV18Flash_updater_implIZ4mainE10Flash_dataJLN3mcu5FLASH6SectorE127ELS3_126EEE
-                0x0000000008003480        0xc build/main.o
+                0x0000000008003450        0xc build/main.o
  .rodata._ZTVN12Modbus_slaveIZ4mainE7In_regsZ4mainE8Out_regsLj0EE13dma_interruptE
-                0x000000000800348c        0xc build/main.o
+                0x000000000800345c        0xc build/main.o
  .rodata._ZTVN12Modbus_slaveIZ4mainE7In_regsZ4mainE8Out_regsLj0EE14uart_interruptE
-                0x0000000008003498        0xc build/main.o
-                0x00000000080034a4                . = ALIGN (0x4)
+                0x0000000008003468        0xc build/main.o
+                0x0000000008003474                . = ALIGN (0x4)
 
-.rel.dyn        0x00000000080034a4        0x0
- .rel.iplt      0x00000000080034a4        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x0000000008003474        0x0
+ .rel.iplt      0x0000000008003474        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x00000000080034a4        0x0
-                0x00000000080034a4                __exidx_start = .
+.ARM            0x0000000008003474        0x0
+                0x0000000008003474                __exidx_start = .
  *(.ARM.exidx*)
-                0x00000000080034a4                __exidx_end = .
+                0x0000000008003474                __exidx_end = .
 
-.preinit_array  0x00000000080034a4        0x0
-                0x00000000080034a4                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0000000008003474        0x0
+                0x0000000008003474                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x00000000080034a4                PROVIDE (__preinit_array_end = .)
+                0x0000000008003474                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x00000000080034a4        0x8
-                0x00000000080034a4                PROVIDE (__init_array_start = .)
+.init_array     0x0000000008003474        0x8
+                0x0000000008003474                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x00000000080034a4        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
- .init_array    0x00000000080034a8        0x4 build/main.o
-                0x00000000080034ac                PROVIDE (__init_array_end = .)
+ .init_array    0x0000000008003474        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+ .init_array    0x0000000008003478        0x4 build/main.o
+                0x000000000800347c                PROVIDE (__init_array_end = .)
 
-.fini_array     0x00000000080034ac        0x4
-                0x00000000080034ac                PROVIDE (__fini_array_start = .)
+.fini_array     0x000000000800347c        0x4
+                0x000000000800347c                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x00000000080034ac        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x00000000080034b0                PROVIDE (__fini_array_end = .)
-                0x00000000080034b0                _sidata = LOADADDR (.data)
+ .fini_array    0x000000000800347c        0x4 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000008003480                PROVIDE (__fini_array_end = .)
+                0x0000000008003480                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000        0x0 load address 0x00000000080034b0
+.data           0x0000000020000000        0x0 load address 0x0000000008003480
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -793,17 +793,17 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtn.o
                 0x0000000020000000                _edata = .
 
 .tm_clone_table
-                0x0000000020000000        0x0 load address 0x00000000080034b0
+                0x0000000020000000        0x0 load address 0x0000000008003480
  .tm_clone_table
                 0x0000000020000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x0000000020000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x0000000020000000        0x0 load address 0x00000000080034b0
+.igot.plt       0x0000000020000000        0x0 load address 0x0000000008003480
  .igot.plt      0x0000000020000000        0x0 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtbegin.o
                 0x0000000020000000                . = ALIGN (0x4)
 
-.bss            0x0000000020000000      0x438 load address 0x00000000080034b0
+.bss            0x0000000020000000      0x438 load address 0x0000000008003480
                 0x0000000020000000                _sbss = .
                 0x0000000020000000                __bss_start__ = _sbss
  *(.bss)
@@ -869,30 +869,30 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtn.o
  .bss._ZZN3Pin4makeIN3mcu4Pin_ILNS1_6PeriphE1ELi0EEELNS1_7PinModeE0EEERDavE3pin
                 0x000000002000008c        0x8 build/main.o
                 0x000000002000008c                Pin::make<mcu::Pin_<(mcu::Periph)1, 0>, (mcu::PinMode)0>()::pin
- .bss._ZGVZN3Pin4makeIN3mcu4Pin_ILNS1_6PeriphE2ELi1EEELNS1_7PinModeE0EEERDavE3pin
+ .bss._ZGVZN3Pin4makeIN3mcu4Pin_ILNS1_6PeriphE2ELi15EEELNS1_7PinModeE0EEERDavE3pin
                 0x0000000020000094        0x4 build/main.o
-                0x0000000020000094                guard variable for Pin::make<mcu::Pin_<(mcu::Periph)2, 1>, (mcu::PinMode)0>()::pin
- .bss._ZZN3Pin4makeIN3mcu4Pin_ILNS1_6PeriphE2ELi1EEELNS1_7PinModeE0EEERDavE3pin
+                0x0000000020000094                guard variable for Pin::make<mcu::Pin_<(mcu::Periph)2, 15>, (mcu::PinMode)0>()::pin
+ .bss._ZZN3Pin4makeIN3mcu4Pin_ILNS1_6PeriphE2ELi15EEELNS1_7PinModeE0EEERDavE3pin
                 0x0000000020000098        0x8 build/main.o
-                0x0000000020000098                Pin::make<mcu::Pin_<(mcu::Periph)2, 1>, (mcu::PinMode)0>()::pin
- .bss._ZGVZN3Pin4makeIN3mcu4Pin_ILNS1_6PeriphE2ELi0EEELNS1_7PinModeE0EEERDavE3pin
+                0x0000000020000098                Pin::make<mcu::Pin_<(mcu::Periph)2, 15>, (mcu::PinMode)0>()::pin
+ .bss._ZGVZN3Pin4makeIN3mcu4Pin_ILNS1_6PeriphE2ELi14EEELNS1_7PinModeE0EEERDavE3pin
                 0x00000000200000a0        0x4 build/main.o
-                0x00000000200000a0                guard variable for Pin::make<mcu::Pin_<(mcu::Periph)2, 0>, (mcu::PinMode)0>()::pin
- .bss._ZZN3Pin4makeIN3mcu4Pin_ILNS1_6PeriphE2ELi0EEELNS1_7PinModeE0EEERDavE3pin
+                0x00000000200000a0                guard variable for Pin::make<mcu::Pin_<(mcu::Periph)2, 14>, (mcu::PinMode)0>()::pin
+ .bss._ZZN3Pin4makeIN3mcu4Pin_ILNS1_6PeriphE2ELi14EEELNS1_7PinModeE0EEERDavE3pin
                 0x00000000200000a4        0x8 build/main.o
-                0x00000000200000a4                Pin::make<mcu::Pin_<(mcu::Periph)2, 0>, (mcu::PinMode)0>()::pin
- .bss._ZGVZN3Pin4makeIN3mcu4Pin_ILNS1_6PeriphE2ELi9EEELNS1_7PinModeE0EEERDavE3pin
+                0x00000000200000a4                Pin::make<mcu::Pin_<(mcu::Periph)2, 14>, (mcu::PinMode)0>()::pin
+ .bss._ZGVZN3Pin4makeIN3mcu4Pin_ILNS1_6PeriphE2ELi13EEELNS1_7PinModeE0EEERDavE3pin
                 0x00000000200000ac        0x4 build/main.o
-                0x00000000200000ac                guard variable for Pin::make<mcu::Pin_<(mcu::Periph)2, 9>, (mcu::PinMode)0>()::pin
- .bss._ZZN3Pin4makeIN3mcu4Pin_ILNS1_6PeriphE2ELi9EEELNS1_7PinModeE0EEERDavE3pin
+                0x00000000200000ac                guard variable for Pin::make<mcu::Pin_<(mcu::Periph)2, 13>, (mcu::PinMode)0>()::pin
+ .bss._ZZN3Pin4makeIN3mcu4Pin_ILNS1_6PeriphE2ELi13EEELNS1_7PinModeE0EEERDavE3pin
                 0x00000000200000b0        0x8 build/main.o
-                0x00000000200000b0                Pin::make<mcu::Pin_<(mcu::Periph)2, 9>, (mcu::PinMode)0>()::pin
- .bss._ZGVZN3Pin4makeIN3mcu4Pin_ILNS1_6PeriphE2ELi8EEELNS1_7PinModeE0EEERDavE3pin
+                0x00000000200000b0                Pin::make<mcu::Pin_<(mcu::Periph)2, 13>, (mcu::PinMode)0>()::pin
+ .bss._ZGVZN3Pin4makeIN3mcu4Pin_ILNS1_6PeriphE2ELi12EEELNS1_7PinModeE0EEERDavE3pin
                 0x00000000200000b8        0x4 build/main.o
-                0x00000000200000b8                guard variable for Pin::make<mcu::Pin_<(mcu::Periph)2, 8>, (mcu::PinMode)0>()::pin
- .bss._ZZN3Pin4makeIN3mcu4Pin_ILNS1_6PeriphE2ELi8EEELNS1_7PinModeE0EEERDavE3pin
+                0x00000000200000b8                guard variable for Pin::make<mcu::Pin_<(mcu::Periph)2, 12>, (mcu::PinMode)0>()::pin
+ .bss._ZZN3Pin4makeIN3mcu4Pin_ILNS1_6PeriphE2ELi12EEELNS1_7PinModeE0EEERDavE3pin
                 0x00000000200000bc        0x8 build/main.o
-                0x00000000200000bc                Pin::make<mcu::Pin_<(mcu::Periph)2, 8>, (mcu::PinMode)0>()::pin
+                0x00000000200000bc                Pin::make<mcu::Pin_<(mcu::Periph)2, 12>, (mcu::PinMode)0>()::pin
  .bss._ZGVZN3Pin4makeIN3mcu4Pin_ILNS1_6PeriphE2ELi7EEELNS1_7PinModeE0EEERDavE3pin
                 0x00000000200000c4        0x4 build/main.o
                 0x00000000200000c4                guard variable for Pin::make<mcu::Pin_<(mcu::Periph)2, 7>, (mcu::PinMode)0>()::pin
@@ -923,12 +923,12 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtn.o
  .bss._ZZN5Lamps4makeIN3mcu4Pin_ILNS1_6PeriphE1ELi0EEENS2_ILS3_1ELi1EEENS2_ILS3_1ELi2EEENS2_ILS3_1ELi3EEENS2_ILS3_1ELi4EEENS2_ILS3_1ELi5EEENS2_ILS3_1ELi6EEENS2_ILS3_1ELi7EEENS2_ILS3_3ELi4EEENS2_ILS3_3ELi5EEEEERS_RtRhE6result
                 0x00000000200000f8       0x40 build/main.o
                 0x00000000200000f8                Lamps::make<mcu::Pin_<(mcu::Periph)1, 0>, mcu::Pin_<(mcu::Periph)1, 1>, mcu::Pin_<(mcu::Periph)1, 2>, mcu::Pin_<(mcu::Periph)1, 3>, mcu::Pin_<(mcu::Periph)1, 4>, mcu::Pin_<(mcu::Periph)1, 5>, mcu::Pin_<(mcu::Periph)1, 6>, mcu::Pin_<(mcu::Periph)1, 7>, mcu::Pin_<(mcu::Periph)3, 4>, mcu::Pin_<(mcu::Periph)3, 5> >(unsigned short&, unsigned char&)::result
- .bss._ZGVZN5Value4makeIN3mcu4Pin_ILNS1_6PeriphE2ELi8EEENS2_ILS3_2ELi9EEENS2_ILS3_2ELi0EEENS2_ILS3_2ELi1EEEEERS_vE6result
+ .bss._ZGVZN5Value4makeIN3mcu4Pin_ILNS1_6PeriphE2ELi12EEENS2_ILS3_2ELi13EEENS2_ILS3_2ELi14EEENS2_ILS3_2ELi15EEEEERS_vE6result
                 0x0000000020000138        0x4 build/main.o
-                0x0000000020000138                guard variable for Value::make<mcu::Pin_<(mcu::Periph)2, 8>, mcu::Pin_<(mcu::Periph)2, 9>, mcu::Pin_<(mcu::Periph)2, 0>, mcu::Pin_<(mcu::Periph)2, 1> >()::result
- .bss._ZZN5Value4makeIN3mcu4Pin_ILNS1_6PeriphE2ELi8EEENS2_ILS3_2ELi9EEENS2_ILS3_2ELi0EEENS2_ILS3_2ELi1EEEEERS_vE6result
+                0x0000000020000138                guard variable for Value::make<mcu::Pin_<(mcu::Periph)2, 12>, mcu::Pin_<(mcu::Periph)2, 13>, mcu::Pin_<(mcu::Periph)2, 14>, mcu::Pin_<(mcu::Periph)2, 15> >()::result
+ .bss._ZZN5Value4makeIN3mcu4Pin_ILNS1_6PeriphE2ELi12EEENS2_ILS3_2ELi13EEENS2_ILS3_2ELi14EEENS2_ILS3_2ELi15EEEEERS_vE6result
                 0x000000002000013c       0x14 build/main.o
-                0x000000002000013c                Value::make<mcu::Pin_<(mcu::Periph)2, 8>, mcu::Pin_<(mcu::Periph)2, 9>, mcu::Pin_<(mcu::Periph)2, 0>, mcu::Pin_<(mcu::Periph)2, 1> >()::result
+                0x000000002000013c                Value::make<mcu::Pin_<(mcu::Periph)2, 12>, mcu::Pin_<(mcu::Periph)2, 13>, mcu::Pin_<(mcu::Periph)2, 14>, mcu::Pin_<(mcu::Periph)2, 15> >()::result
  .bss._ZGVZN5Value4makeIN3mcu4Pin_ILNS1_6PeriphE2ELi4EEENS2_ILS3_2ELi5EEENS2_ILS3_2ELi6EEENS2_ILS3_2ELi7EEEEERS_vE6result
                 0x0000000020000150        0x4 build/main.o
                 0x0000000020000150                guard variable for Value::make<mcu::Pin_<(mcu::Periph)2, 4>, mcu::Pin_<(mcu::Periph)2, 5>, mcu::Pin_<(mcu::Periph)2, 6>, mcu::Pin_<(mcu::Periph)2, 7> >()::result
@@ -1056,7 +1056,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtn.o
                 0x0000000020000438                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x0000000020000438      0x600 load address 0x00000000080034b0
+                0x0000000020000438      0x600 load address 0x0000000008003480
                 0x0000000020000438                . = ALIGN (0x8)
                 [!provide]                        PROVIDE (end = .)
                 [!provide]                        PROVIDE (_end = .)
@@ -1117,16 +1117,16 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a
  .comment       0x00000000000000a7       0x4f /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
  .comment       0x00000000000000a7       0x5a /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/crtend.o
 
-.debug_info     0x0000000000000000    0x42376
- .debug_info    0x0000000000000000    0x3f9b0 build/main.o
- .debug_info    0x000000000003f9b0       0x22 build/startup_stm32f103xb.o
- .debug_info    0x000000000003f9d2      0x11a /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
- .debug_info    0x000000000003faec      0x9c2 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcmp.o)
- .debug_info    0x00000000000404ae      0xf35 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
- .debug_info    0x00000000000413e3      0xf21 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
- .debug_info    0x0000000000042304       0x26 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
- .debug_info    0x000000000004232a       0x26 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
- .debug_info    0x0000000000042350       0x26 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+.debug_info     0x0000000000000000    0x42287
+ .debug_info    0x0000000000000000    0x3f8c1 build/main.o
+ .debug_info    0x000000000003f8c1       0x22 build/startup_stm32f103xb.o
+ .debug_info    0x000000000003f8e3      0x11a /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+ .debug_info    0x000000000003f9fd      0x9c2 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcmp.o)
+ .debug_info    0x00000000000403bf      0xf35 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_info    0x00000000000412f4      0xf21 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .debug_info    0x0000000000042215       0x26 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .debug_info    0x000000000004223b       0x26 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_info    0x0000000000042261       0x26 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
 
 .debug_abbrev   0x0000000000000000     0x1f73
  .debug_abbrev  0x0000000000000000     0x18ec build/main.o
@@ -1139,12 +1139,12 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a
  .debug_abbrev  0x0000000000001f4b       0x14 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
  .debug_abbrev  0x0000000000001f5f       0x14 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
 
-.debug_loc      0x0000000000000000     0xefeb
- .debug_loc     0x0000000000000000     0xe5c6 build/main.o
- .debug_loc     0x000000000000e5c6       0x98 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
- .debug_loc     0x000000000000e65e      0x22d /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcmp.o)
- .debug_loc     0x000000000000e88b      0x481 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
- .debug_loc     0x000000000000ed0c      0x2df /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+.debug_loc      0x0000000000000000     0xef4f
+ .debug_loc     0x0000000000000000     0xe52a build/main.o
+ .debug_loc     0x000000000000e52a       0x98 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+ .debug_loc     0x000000000000e5c2      0x22d /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcmp.o)
+ .debug_loc     0x000000000000e7ef      0x481 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_loc     0x000000000000ec70      0x2df /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
 
 .debug_aranges  0x0000000000000000      0x488
  .debug_aranges
@@ -1166,38 +1166,38 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a
  .debug_aranges
                 0x0000000000000468       0x20 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
 
-.debug_ranges   0x0000000000000000     0x39d0
- .debug_ranges  0x0000000000000000     0x39b0 build/main.o
- .debug_ranges  0x00000000000039b0       0x20 build/startup_stm32f103xb.o
+.debug_ranges   0x0000000000000000     0x39e0
+ .debug_ranges  0x0000000000000000     0x39c0 build/main.o
+ .debug_ranges  0x00000000000039c0       0x20 build/startup_stm32f103xb.o
 
-.debug_line     0x0000000000000000     0x74c1
- .debug_line    0x0000000000000000     0x6b78 build/main.o
- .debug_line    0x0000000000006b78       0x88 build/startup_stm32f103xb.o
- .debug_line    0x0000000000006c00       0xfc /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
- .debug_line    0x0000000000006cfc      0x1c3 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcmp.o)
- .debug_line    0x0000000000006ebf      0x24d /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
- .debug_line    0x000000000000710c      0x281 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
- .debug_line    0x000000000000738d       0x68 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
- .debug_line    0x00000000000073f5       0x6c /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
- .debug_line    0x0000000000007461       0x60 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+.debug_line     0x0000000000000000     0x74bc
+ .debug_line    0x0000000000000000     0x6b73 build/main.o
+ .debug_line    0x0000000000006b73       0x88 build/startup_stm32f103xb.o
+ .debug_line    0x0000000000006bfb       0xfc /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+ .debug_line    0x0000000000006cf7      0x1c3 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcmp.o)
+ .debug_line    0x0000000000006eba      0x24d /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_line    0x0000000000007107      0x281 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .debug_line    0x0000000000007388       0x68 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .debug_line    0x00000000000073f0       0x6c /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_line    0x000000000000745c       0x60 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
 
-.debug_str      0x0000000000000000    0x4b23e
- .debug_str     0x0000000000000000    0x4ac66 build/main.o
-                                      0x4b62b (size before relaxing)
- .debug_str     0x000000000004ac66       0x38 build/startup_stm32f103xb.o
+.debug_str      0x0000000000000000    0x4b25e
+ .debug_str     0x0000000000000000    0x4ac86 build/main.o
+                                      0x4b646 (size before relaxing)
+ .debug_str     0x000000000004ac86       0x38 build/startup_stm32f103xb.o
                                          0x58 (size before relaxing)
- .debug_str     0x000000000004ac9e      0x180 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+ .debug_str     0x000000000004acbe      0x180 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
                                         0x222 (size before relaxing)
- .debug_str     0x000000000004ae1e      0x10b /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcmp.o)
+ .debug_str     0x000000000004ae3e      0x10b /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcmp.o)
                                         0x5df (size before relaxing)
- .debug_str     0x000000000004af29      0x23d /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_str     0x000000000004af49      0x23d /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
                                         0x92d (size before relaxing)
- .debug_str     0x000000000004b166       0x41 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .debug_str     0x000000000004b186       0x41 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
                                         0x908 (size before relaxing)
- .debug_str     0x000000000004b1a7       0x97 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .debug_str     0x000000000004b1c7       0x97 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
                                          0xa3 (size before relaxing)
- .debug_str     0x000000000004b23e       0xa3 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
- .debug_str     0x000000000004b23e       0xa3 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_str     0x000000000004b25e       0xa3 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_str     0x000000000004b25e       0xa3 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
 
 .debug_frame    0x0000000000000000      0xa40
  .debug_frame   0x0000000000000000      0x964 build/main.o
@@ -1269,14 +1269,14 @@ Pin::make<mcu::Pin_<(mcu::Periph)1, 4>, (mcu::PinMode)0>()::pin build/main.o
 Pin::make<mcu::Pin_<(mcu::Periph)1, 5>, (mcu::PinMode)0>()::pin build/main.o
 Pin::make<mcu::Pin_<(mcu::Periph)1, 6>, (mcu::PinMode)0>()::pin build/main.o
 Pin::make<mcu::Pin_<(mcu::Periph)1, 7>, (mcu::PinMode)0>()::pin build/main.o
-Pin::make<mcu::Pin_<(mcu::Periph)2, 0>, (mcu::PinMode)0>()::pin build/main.o
-Pin::make<mcu::Pin_<(mcu::Periph)2, 1>, (mcu::PinMode)0>()::pin build/main.o
+Pin::make<mcu::Pin_<(mcu::Periph)2, 12>, (mcu::PinMode)0>()::pin build/main.o
+Pin::make<mcu::Pin_<(mcu::Periph)2, 13>, (mcu::PinMode)0>()::pin build/main.o
+Pin::make<mcu::Pin_<(mcu::Periph)2, 14>, (mcu::PinMode)0>()::pin build/main.o
+Pin::make<mcu::Pin_<(mcu::Periph)2, 15>, (mcu::PinMode)0>()::pin build/main.o
 Pin::make<mcu::Pin_<(mcu::Periph)2, 4>, (mcu::PinMode)0>()::pin build/main.o
 Pin::make<mcu::Pin_<(mcu::Periph)2, 5>, (mcu::PinMode)0>()::pin build/main.o
 Pin::make<mcu::Pin_<(mcu::Periph)2, 6>, (mcu::PinMode)0>()::pin build/main.o
 Pin::make<mcu::Pin_<(mcu::Periph)2, 7>, (mcu::PinMode)0>()::pin build/main.o
-Pin::make<mcu::Pin_<(mcu::Periph)2, 8>, (mcu::PinMode)0>()::pin build/main.o
-Pin::make<mcu::Pin_<(mcu::Periph)2, 9>, (mcu::PinMode)0>()::pin build/main.o
 Pin::make<mcu::Pin_<(mcu::Periph)3, 10>, (mcu::PinMode)7>()::pin build/main.o
 Pin::make<mcu::Pin_<(mcu::Periph)3, 11>, (mcu::PinMode)8>()::pin build/main.o
 Pin::make<mcu::Pin_<(mcu::Periph)3, 4>, (mcu::PinMode)0>()::pin build/main.o
@@ -1325,8 +1325,8 @@ USBWakeUp_IRQHandler                              build/main.o
 USB_HP_CAN1_TX_IRQHandler                         build/main.o
 USB_LP_CAN1_RX0_IRQHandler                        build/main.o
 UsageFault_Handler                                build/startup_stm32f103xb.o
+Value::make<mcu::Pin_<(mcu::Periph)2, 12>, mcu::Pin_<(mcu::Periph)2, 13>, mcu::Pin_<(mcu::Periph)2, 14>, mcu::Pin_<(mcu::Periph)2, 15> >()::result build/main.o
 Value::make<mcu::Pin_<(mcu::Periph)2, 4>, mcu::Pin_<(mcu::Periph)2, 5>, mcu::Pin_<(mcu::Periph)2, 6>, mcu::Pin_<(mcu::Periph)2, 7> >()::result build/main.o
-Value::make<mcu::Pin_<(mcu::Periph)2, 8>, mcu::Pin_<(mcu::Periph)2, 9>, mcu::Pin_<(mcu::Periph)2, 0>, mcu::Pin_<(mcu::Periph)2, 1> >()::result build/main.o
 Value::operator()()                               build/main.o
 WWDG_IRQHandler                                   build/main.o
 Work_count::notify()                              build/main.o
@@ -1415,21 +1415,21 @@ guard variable for Pin::make<mcu::Pin_<(mcu::Periph)1, 4>, (mcu::PinMode)0>()::p
 guard variable for Pin::make<mcu::Pin_<(mcu::Periph)1, 5>, (mcu::PinMode)0>()::pin build/main.o
 guard variable for Pin::make<mcu::Pin_<(mcu::Periph)1, 6>, (mcu::PinMode)0>()::pin build/main.o
 guard variable for Pin::make<mcu::Pin_<(mcu::Periph)1, 7>, (mcu::PinMode)0>()::pin build/main.o
-guard variable for Pin::make<mcu::Pin_<(mcu::Periph)2, 0>, (mcu::PinMode)0>()::pin build/main.o
-guard variable for Pin::make<mcu::Pin_<(mcu::Periph)2, 1>, (mcu::PinMode)0>()::pin build/main.o
+guard variable for Pin::make<mcu::Pin_<(mcu::Periph)2, 12>, (mcu::PinMode)0>()::pin build/main.o
+guard variable for Pin::make<mcu::Pin_<(mcu::Periph)2, 13>, (mcu::PinMode)0>()::pin build/main.o
+guard variable for Pin::make<mcu::Pin_<(mcu::Periph)2, 14>, (mcu::PinMode)0>()::pin build/main.o
+guard variable for Pin::make<mcu::Pin_<(mcu::Periph)2, 15>, (mcu::PinMode)0>()::pin build/main.o
 guard variable for Pin::make<mcu::Pin_<(mcu::Periph)2, 4>, (mcu::PinMode)0>()::pin build/main.o
 guard variable for Pin::make<mcu::Pin_<(mcu::Periph)2, 5>, (mcu::PinMode)0>()::pin build/main.o
 guard variable for Pin::make<mcu::Pin_<(mcu::Periph)2, 6>, (mcu::PinMode)0>()::pin build/main.o
 guard variable for Pin::make<mcu::Pin_<(mcu::Periph)2, 7>, (mcu::PinMode)0>()::pin build/main.o
-guard variable for Pin::make<mcu::Pin_<(mcu::Periph)2, 8>, (mcu::PinMode)0>()::pin build/main.o
-guard variable for Pin::make<mcu::Pin_<(mcu::Periph)2, 9>, (mcu::PinMode)0>()::pin build/main.o
 guard variable for Pin::make<mcu::Pin_<(mcu::Periph)3, 10>, (mcu::PinMode)7>()::pin build/main.o
 guard variable for Pin::make<mcu::Pin_<(mcu::Periph)3, 11>, (mcu::PinMode)8>()::pin build/main.o
 guard variable for Pin::make<mcu::Pin_<(mcu::Periph)3, 4>, (mcu::PinMode)0>()::pin build/main.o
 guard variable for Pin::make<mcu::Pin_<(mcu::Periph)3, 5>, (mcu::PinMode)0>()::pin build/main.o
 guard variable for UART_sized<255u>::make<(mcu::Periph)9, mcu::Pin_<(mcu::Periph)3, 10>, mcu::Pin_<(mcu::Periph)3, 11>, mcu::Pin_<(mcu::Periph)1, 15> >()::uart build/main.o
+guard variable for Value::make<mcu::Pin_<(mcu::Periph)2, 12>, mcu::Pin_<(mcu::Periph)2, 13>, mcu::Pin_<(mcu::Periph)2, 14>, mcu::Pin_<(mcu::Periph)2, 15> >()::result build/main.o
 guard variable for Value::make<mcu::Pin_<(mcu::Periph)2, 4>, mcu::Pin_<(mcu::Periph)2, 5>, mcu::Pin_<(mcu::Periph)2, 6>, mcu::Pin_<(mcu::Periph)2, 7> >()::result build/main.o
-guard variable for Value::make<mcu::Pin_<(mcu::Periph)2, 8>, mcu::Pin_<(mcu::Periph)2, 9>, mcu::Pin_<(mcu::Periph)2, 0>, mcu::Pin_<(mcu::Periph)2, 1> >()::result build/main.o
 hardware_init_hook                                /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
 init_clock                                        build/main.o
                                                   build/startup_stm32f103xb.o

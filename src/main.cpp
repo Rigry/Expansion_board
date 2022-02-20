@@ -30,10 +30,10 @@ using A1 = mcu::PB5;
 using A2 = mcu::PB6;
 using A3 = mcu::PB7;
 
-using J0 = mcu::PB8;
-using J1 = mcu::PB9;
-using J2 = mcu::PB0;
-using J3 = mcu::PB1;
+using J0 = mcu::PB12;
+using J1 = mcu::PB13;
+using J2 = mcu::PB14;
+using J3 = mcu::PB15;
 
 using FACTORY = mcu::PC3;
 
@@ -82,9 +82,9 @@ int main()
     struct In_regs {
         UART::Settings uart_set;         // 0
         uint16_t password;               // 1
-        uint16_t factory_number;         // 3
-        uint16_t reset_hours;            // 4
-        uint8_t  n_lamp;                 // 5
+        uint16_t factory_number;         // 2
+        uint16_t reset_hours;            // 3
+        uint16_t  n_lamp;                // 4
     }__attribute__((packed));
 
     struct Out_regs {
@@ -92,8 +92,9 @@ int main()
         uint16_t       factory_number;     // 1
         UART::Settings uart_set;           // 2
         uint16_t       modbus_address;     // 3
-        Flags          work_flags;         // 4
-        uint8_t        lamps;              // 5
+        uint16_t       n_lamp;             // 4
+        // Flags          work_flags;         // 4
+        uint16_t       lamps;              // 5
         uint16_t       bad_lamps;          // 6
         uint16_t       hours;              // 7
     }; // __attribute__((packed)); // TODO error: cannot bind packed field 
@@ -123,6 +124,8 @@ int main()
         , flash.lamps
     };
 
+    work_count.start();
+
     [[maybe_unused]] auto __ = Safe_flash_updater<
           mcu::FLASH::Sector::_89
         , mcu::FLASH::Sector::_115
@@ -136,14 +139,15 @@ int main()
     modbus_slave.outRegs.lamps             = flash.lamps;
     modbus_slave.arInRegsMax[ADR(uart_set)]= 0x0F;
 
-    auto& work_flags = modbus_slave.outRegs.work_flags;
+    // auto& work_flags = modbus_slave.outRegs.work_flags;
 
-    // Определение плохих ламп
+    // // Определение плохих ламп
     Lamps::make<
         EPRA1,EPRA2,EPRA3,EPRA4,EPRA5,EPRA6,EPRA7,EPRA8,EPRA9,EPRA10
     >(modbus_slave.outRegs.bad_lamps, flash.lamps);
 
     while (1) {
+
         modbus_slave( [&](auto registr){
             static bool unblock = false;
             switch (registr) {
@@ -165,13 +169,17 @@ int main()
                     unblock = true;
                 break;
                 case ADR(reset_hours): // TODO без плат расширения
-                    work_count.reset_by_mask(modbus_slave.inRegs.reset_hours);
+                    // work_count.reset_by_mask(modbus_slave.inRegs.reset_hours);
                 break;
                 case ADR(n_lamp):
-                    uint8_t lamp{modbus_slave.inRegs.n_lamp};
-                    lamp = lamp > 9 ? 9 : lamp;
-                    modbus_slave.outRegs.hours
-                        = work_count.get_hours(lamp);
+                    if (modbus_slave.inRegs.n_lamp > 9) {
+                        modbus_slave.outRegs.hours
+                        = work_count.get_hours(0);
+                    } else {
+                        modbus_slave.outRegs.hours = work_count.get_hours(modbus_slave.inRegs.n_lamp);
+                    } 
+
+                    modbus_slave.outRegs.n_lamp = modbus_slave.inRegs.n_lamp;
                 break;
             } // switch
         });
