@@ -2,13 +2,6 @@
 
 uint8_t lamps;
 
-struct Count {
-    uint16_t on;
-    uint16_t reset_all;
-    uint16_t reset_one;
-    uint16_t reset_log;
-};
-
 struct Flags {
     bool us_on        : 1;
     bool uv_on        : 1;

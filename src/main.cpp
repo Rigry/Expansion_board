@@ -66,12 +66,6 @@ int main()
         uint8_t  modbus_address = 1;
         uint8_t  lamps = 5;
         uint8_t  model_number = 0;
-        // Count count = {
-        //     .on        = 0,
-        //     .reset_all = 0,
-        //     .reset_one = 0,
-        //     .reset_log = 0
-        // };
     } flash;
 
     [[maybe_unused]] auto _ = Flash_updater<
@@ -84,7 +78,7 @@ int main()
         uint16_t password;               // 1
         uint16_t factory_number;         // 2
         uint16_t reset_hours;            // 3
-        uint16_t  n_lamp;                // 4
+        uint16_t n_lamp;                 // 4
     }__attribute__((packed));
 
     struct Out_regs {
@@ -168,8 +162,8 @@ int main()
                     }
                     unblock = true;
                 break;
-                case ADR(reset_hours): // TODO без плат расширения
-                    // work_count.reset_by_mask(modbus_slave.inRegs.reset_hours);
+                case ADR(reset_hours):
+                    work_count.reset_by_mask(modbus_slave.inRegs.reset_hours);
                 break;
                 case ADR(n_lamp):
                     if (modbus_slave.inRegs.n_lamp > 9) {
